@@ -13,9 +13,11 @@
 		520AC2042BA40D6D00B8151D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520AC2022BA40D6D00B8151D /* Main.storyboard */; };
 		520AC2062BA40D6E00B8151D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520AC2052BA40D6E00B8151D /* Assets.xcassets */; };
 		520AC2092BA40D6E00B8151D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520AC2072BA40D6E00B8151D /* LaunchScreen.storyboard */; };
+		5608C7DE022C60F9FD30FC76 /* Pods_NotificationBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ABF1D522FB92EAD49DD9B7 /* Pods_NotificationBanner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48B7D03000960C1B79DFB098 /* Pods-NotificationBanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationBanner.release.xcconfig"; path = "Target Support Files/Pods-NotificationBanner/Pods-NotificationBanner.release.xcconfig"; sourceTree = "<group>"; };
 		520AC1F92BA40D6D00B8151D /* NotificationBanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotificationBanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		520AC1FC2BA40D6D00B8151D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		520AC1FE2BA40D6D00B8151D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		520AC2052BA40D6E00B8151D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		520AC2082BA40D6E00B8151D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		520AC20A2BA40D6E00B8151D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93F201A7F98F648BCB9C22FE /* Pods-NotificationBanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationBanner.debug.xcconfig"; path = "Target Support Files/Pods-NotificationBanner/Pods-NotificationBanner.debug.xcconfig"; sourceTree = "<group>"; };
+		F3ABF1D522FB92EAD49DD9B7 /* Pods_NotificationBanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5608C7DE022C60F9FD30FC76 /* Pods_NotificationBanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29F2C811C0AA437B7E96E27D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93F201A7F98F648BCB9C22FE /* Pods-NotificationBanner.debug.xcconfig */,
+				48B7D03000960C1B79DFB098 /* Pods-NotificationBanner.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		520AC1F02BA40D6D00B8151D = {
 			isa = PBXGroup;
 			children = (
 				520AC1FB2BA40D6D00B8151D /* NotificationBanner */,
 				520AC1FA2BA40D6D00B8151D /* Products */,
+				29F2C811C0AA437B7E96E27D /* Pods */,
+				8DF3D63439845823A0E0F9B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +83,14 @@
 			path = NotificationBanner;
 			sourceTree = "<group>";
 		};
+		8DF3D63439845823A0E0F9B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3ABF1D522FB92EAD49DD9B7 /* Pods_NotificationBanner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 520AC20D2BA40D6E00B8151D /* Build configuration list for PBXNativeTarget "NotificationBanner" */;
 			buildPhases = (
+				833A014979C30ADAC8E1A211 /* [CP] Check Pods Manifest.lock */,
 				520AC1F52BA40D6D00B8151D /* Sources */,
 				520AC1F62BA40D6D00B8151D /* Frameworks */,
 				520AC1F72BA40D6D00B8151D /* Resources */,
+				7AA6019CC2EA1A979023659B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7AA6019CC2EA1A979023659B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotificationBanner/Pods-NotificationBanner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotificationBanner/Pods-NotificationBanner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NotificationBanner/Pods-NotificationBanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		833A014979C30ADAC8E1A211 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotificationBanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		520AC1F52BA40D6D00B8151D /* Sources */ = {
@@ -203,7 +271,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -266,7 +334,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -287,6 +355,7 @@
 		};
 		520AC20E2BA40D6E00B8151D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93F201A7F98F648BCB9C22FE /* Pods-NotificationBanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,6 +384,7 @@
 		};
 		520AC20F2BA40D6E00B8151D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48B7D03000960C1B79DFB098 /* Pods-NotificationBanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
