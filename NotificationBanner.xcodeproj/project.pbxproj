@@ -13,6 +13,9 @@
 		520AC2042BA40D6D00B8151D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520AC2022BA40D6D00B8151D /* Main.storyboard */; };
 		520AC2062BA40D6E00B8151D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520AC2052BA40D6E00B8151D /* Assets.xcassets */; };
 		520AC2092BA40D6E00B8151D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520AC2072BA40D6E00B8151D /* LaunchScreen.storyboard */; };
+		520AC2122BA41C1B00B8151D /* RxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520AC2112BA41C1B00B8151D /* RxViewController.swift */; };
+		520AC2142BA41C3100B8151D /* RxExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520AC2132BA41C3100B8151D /* RxExtension.swift */; };
+		520AC2182BA41C6C00B8151D /* NotificationBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520AC2172BA41C6C00B8151D /* NotificationBannerView.swift */; };
 		5608C7DE022C60F9FD30FC76 /* Pods_NotificationBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ABF1D522FB92EAD49DD9B7 /* Pods_NotificationBanner.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +29,9 @@
 		520AC2052BA40D6E00B8151D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		520AC2082BA40D6E00B8151D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		520AC20A2BA40D6E00B8151D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		520AC2112BA41C1B00B8151D /* RxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxViewController.swift; sourceTree = "<group>"; };
+		520AC2132BA41C3100B8151D /* RxExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxExtension.swift; sourceTree = "<group>"; };
+		520AC2172BA41C6C00B8151D /* NotificationBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBannerView.swift; sourceTree = "<group>"; };
 		93F201A7F98F648BCB9C22FE /* Pods-NotificationBanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationBanner.debug.xcconfig"; path = "Target Support Files/Pods-NotificationBanner/Pods-NotificationBanner.debug.xcconfig"; sourceTree = "<group>"; };
 		F3ABF1D522FB92EAD49DD9B7 /* Pods_NotificationBanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -72,6 +78,8 @@
 		520AC1FB2BA40D6D00B8151D /* NotificationBanner */ = {
 			isa = PBXGroup;
 			children = (
+				520AC2162BA41C6200B8151D /* Banner */,
+				520AC2102BA41C0E00B8151D /* Rx */,
 				520AC1FC2BA40D6D00B8151D /* AppDelegate.swift */,
 				520AC1FE2BA40D6D00B8151D /* SceneDelegate.swift */,
 				520AC2002BA40D6D00B8151D /* ViewController.swift */,
@@ -81,6 +89,23 @@
 				520AC20A2BA40D6E00B8151D /* Info.plist */,
 			);
 			path = NotificationBanner;
+			sourceTree = "<group>";
+		};
+		520AC2102BA41C0E00B8151D /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				520AC2112BA41C1B00B8151D /* RxViewController.swift */,
+				520AC2132BA41C3100B8151D /* RxExtension.swift */,
+			);
+			path = Rx;
+			sourceTree = "<group>";
+		};
+		520AC2162BA41C6200B8151D /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				520AC2172BA41C6C00B8151D /* NotificationBannerView.swift */,
+			);
+			path = Banner;
 			sourceTree = "<group>";
 		};
 		8DF3D63439845823A0E0F9B0 /* Frameworks */ = {
@@ -208,7 +233,10 @@
 			files = (
 				520AC2012BA40D6D00B8151D /* ViewController.swift in Sources */,
 				520AC1FD2BA40D6D00B8151D /* AppDelegate.swift in Sources */,
+				520AC2122BA41C1B00B8151D /* RxViewController.swift in Sources */,
 				520AC1FF2BA40D6D00B8151D /* SceneDelegate.swift in Sources */,
+				520AC2142BA41C3100B8151D /* RxExtension.swift in Sources */,
+				520AC2182BA41C6C00B8151D /* NotificationBannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
