@@ -20,5 +20,8 @@
 
 <br>
 
+## Blog Link
+- https://serious-variraptor-8c1.notion.site/Notification-Banner-607561fa61e847529da1cd8cf3de3b1e?pvs=4
+
 ## 참고 문헌
 - https://github.com/Daltron/NotificationBanner
