@@ -5,7 +5,7 @@
 
 <br>
 
-## How to Use
+## How to use
 ```swift
 let banner = NotificationBannerView(title: "message", style: .info, position: .top)
 banner.show()
