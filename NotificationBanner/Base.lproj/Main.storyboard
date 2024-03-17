@@ -16,21 +16,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykK-KB-pKb">
-                                <rect key="frame" x="134.33333333333334" y="421" width="124.33333333333334" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Show Banner"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nug-J6-M4W">
+                                <rect key="frame" x="103.99999999999999" y="404" width="184.66666666666669" height="68.666666666666686"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykK-KB-pKb">
+                                        <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Show Top Banner"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhh-ky-PYC">
+                                        <rect key="frame" x="0.0" y="34.333333333333371" width="184.66666666666666" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Show Bottom Banner"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ykK-KB-pKb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FDx-DD-7eb"/>
-                            <constraint firstItem="ykK-KB-pKb" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="WKw-rk-YOF"/>
+                            <constraint firstItem="nug-J6-M4W" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="jvZ-XT-Gye"/>
+                            <constraint firstItem="nug-J6-M4W" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vVF-cb-Dwc"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="showBannerBtn" destination="ykK-KB-pKb" id="q2s-cd-44y"/>
+                        <outlet property="showBannerTopBtn" destination="ykK-KB-pKb" id="jC5-RO-Cip"/>
+                        <outlet property="showBottomBannerBtn" destination="Vhh-ky-PYC" id="Qxf-Zv-jkc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

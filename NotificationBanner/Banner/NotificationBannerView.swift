@@ -14,9 +14,11 @@ import RxGesture
 // MARK: - BannerStackEvent
 class BannerStackEvent {
     let size: CGSize
+    let position: BannerPosition
     
-    init(size: CGSize) {
+    init(size: CGSize, position: BannerPosition) {
         self.size = size
+        self.position = position
     }
 }
 
@@ -139,7 +141,9 @@ class NotificationBannerView: UIView {
         BannerViewEvent.instance.bannerStackEvent.addEvent(disposeBag: disposeBag) { bannerStackEvent in
             let height = self.position == .top ? bannerStackEvent.size.height : -bannerStackEvent.size.height
             UIView.animate(withDuration: self.animationTime, animations: {
-                self.setFrameY(height: height)
+                if self.position == bannerStackEvent.position {
+                    self.setFrameY(height: height)
+                }
             })
         }
         
@@ -153,7 +157,7 @@ class NotificationBannerView: UIView {
     
     func show() {
         let size = CGSize(width: frame.width, height: title.frame.height + (2 * topMargin))
-        BannerViewEvent.instance.bannerStackEvent.onNext(BannerStackEvent(size: size))
+        BannerViewEvent.instance.bannerStackEvent.onNext(BannerStackEvent(size: size, position: position))
         UIView.animate(withDuration: animationTime, animations: {
             let height = self.position == .top ? self.height : -self.height
             self.setFrameY(height: height)
