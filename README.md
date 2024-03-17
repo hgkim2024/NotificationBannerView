@@ -5,6 +5,14 @@
 
 <br>
 
+## How to Use
+```swift
+let banner = NotificationBannerView(title: "message", style: .info, position: .top)
+banner.show()
+```
+
+<br>
+
 ## Notification Banner GIF
 <img src="https://github.com/hgkim2024/NotificationBannerView/assets/163487894/87bb688d-3864-472b-a7fd-68d7a819fea6" width="231" height="500"></img>
 
