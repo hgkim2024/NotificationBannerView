@@ -19,6 +19,7 @@ public enum BannerStyle: Int {
     case success
     case warning
     case error
+}
 ```
 
 ### position
