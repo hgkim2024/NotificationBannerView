@@ -5,6 +5,11 @@
 
 <br>
 
+## Notification Banner GIF
+<img src="https://github.com/hgkim2024/NotificationBannerView/assets/163487894/87bb688d-3864-472b-a7fd-68d7a819fea6" width="231" height="500"></img>
+
+<br>
+
 ## How to use
 
 ### Use
@@ -29,11 +34,6 @@ public enum BannerPosition: Int {
     case bottom
 }
 ```
-
-<br>
-
-## Notification Banner GIF
-<img src="https://github.com/hgkim2024/NotificationBannerView/assets/163487894/87bb688d-3864-472b-a7fd-68d7a819fea6" width="231" height="500"></img>
 
 <br>
 
