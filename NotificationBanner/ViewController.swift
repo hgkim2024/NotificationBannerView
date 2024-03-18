@@ -45,7 +45,7 @@ class ViewController: RxViewController {
         case 3:
             .warning
         default:
-            .danger
+            .error
         }
     }
     
