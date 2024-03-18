@@ -6,9 +6,27 @@
 <br>
 
 ## How to use
+
+### Use
 ```swift
 let banner = NotificationBannerView(title: "message", style: .info, position: .top)
 banner.show()
+```
+### Style
+```swift
+public enum BannerStyle: Int {
+    case info
+    case success
+    case warning
+    case error
+```
+
+### position
+```swift
+public enum BannerPosition: Int {
+    case top
+    case bottom
+}
 ```
 
 <br>
