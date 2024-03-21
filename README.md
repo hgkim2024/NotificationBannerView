@@ -1,7 +1,5 @@
-## Notification Banner 
-- Swift 5
-- IOS 13.0+
-- Xcode 15.1
+# Notification Banner 
+> IOS 에서 Toast 를 대체할 수 있는 UI 표기 방식을 찾던 와중 NotificationBanner 라이브러리와 유사한 상하단에 표기하는 메세지 UI 를 보게 되었다. 라이브러리를 프로젝트에 적용하려 했지만, 사용하고 싶었던 Banner 가 한 줄만 지원하였다. 여러 줄 메세지 표기가 가능하길 원했기 때문에 직접 구현하게 되었다.
 
 <br>
 
@@ -37,8 +35,10 @@ public enum BannerPosition: Int {
 
 <br>
 
-## 개발 히스토리
-> IOS 에서 Toast 를 대체할 수 있는 UI 표기 방식을 찾던 와중 NotificationBanner 라이브러리와 유사한 상하단에 표기하는 메세지 UI 를 보게 되었다. 라이브러리를 프로젝트에 적용하려 했지만, 사용하고 싶었던 Banner 가 한 줄만 지원하였다. 여러 줄 메세지 표기가 가능하길 원했기 때문에 직접 구현하게 되었다.
+## Build
+- Swift 5
+- IOS 13.0+
+- Xcode 15.1
 
 <br>
 
